@@ -30,7 +30,7 @@ Goal is to change standard credentials (pi:raspberry) and "deactive" default use
 
 > < user > ALL=(ALL) PASSWD: ALL
 
-Source:
+Source used:
 https://www.raspberrypi.org/documentation/configuration/security.md
 
 
@@ -44,7 +44,7 @@ Edit file **/boot/config.txt** and add:
 
 > dtoverlay=disable-bt
 
-Source:
+Source used:
 https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README
 
 
@@ -64,7 +64,7 @@ Raspberry Pi should be used in headless mode. Connection will be allowed via SSH
 * Disable password authentication: ```sudo nano /etc/ssh/sshd_config``` (enable/change "PasswordAuthentication" to "no")
 * Restart SSH: ```sudo service ssh restart```
 
-Source:
+Source used:
 https://www.raspberrypi.org/documentation/configuration/security.md
 
 
@@ -90,7 +90,7 @@ Create folder to save logs (in folder /home/< user >):
 Type ```sudo crontab -e``` into terminal, select preferred editor and add following for daily execution (at midnight): 
 * 0 0 * * * /home/< user >/< file >.sh > /home/< user >/log/< file >.log 2>&1
 
-Source: 
+Source used: 
 https://www.instructables.com/id/Raspberry-Pi-Auto-Update/
 
 
@@ -112,5 +112,5 @@ Add following rules:
 Save rules to persistant iptables: 
 * ```sudo iptables-save > /etc/iptables/rules.v4```
 
-Source: 
+Source used: 
 https://askubuntu.com/questions/780575/use-iptables-to-block-all-incoming-ips
