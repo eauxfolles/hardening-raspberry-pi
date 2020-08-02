@@ -1,2 +1,1 @@
-# hardening-raspberry-pi
-Notes and considerations to harden a Raspberry Pi 4.
+Notes and considerations on hardening a Raspberry Pi 4.
